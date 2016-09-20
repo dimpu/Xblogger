@@ -1,0 +1,21 @@
+<md-toolbar color="primary">
+        <md-icon class="demo-toolbar-icon" id="mybutton">menu</md-icon>
+
+  <span>Xblogger</span>
+</md-toolbar>
+
+<div>
+  <md-sidenav-layout>
+    <md-sidenav #start (open)="mybutton.focus()" opened = true>
+      Start Sidenav.
+      <br>
+      <button md-button #mybutton (click)="start.close()">Close</button>
+    </md-sidenav>
+    <md-sidenav #end align="end">
+      End Sidenav.
+      <button md-button (click)="end.close()">Close</button>
+    </md-sidenav>
+
+    My regular content. This will be moved into the proper DOM at runtime.
+  </md-sidenav-layout>
+</div>

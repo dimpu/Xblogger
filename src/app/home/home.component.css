@@ -1,0 +1,49 @@
+.bg-full {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+}
+.bg-full::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background: #000;
+}
+.bg-full img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.logo {
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    margin: 7rem 0 0 0;
+}
+.logo span {
+    color: chocolate;
+}
+
+md-card {
+    width: 20rem;;
+    margin: 0 auto;
+    text-align: center;
+     position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
